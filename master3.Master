@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master3.master.cs" Inherits="Task_System.master3" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="css/StyleSheet1.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        #hover{
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+             <div class=" mx-4 border-bottom border-2">
+                <div class="fw-medium fs-3 my-2 d-flex justify-content-between" id="hover">
+                    <asp:Button CssClass="btn  border-0 fs-3 " ID="Button1" runat="server" Text="TaskSync" OnClick="Button1_Click" />
+                    <div>
+
+                        <asp:Button CssClass="btn border border-1 rounded fs-5 " ID="Button2" runat="server" Text="Logout" OnClick="Button2_Click" />
+                    </div>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </form>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
